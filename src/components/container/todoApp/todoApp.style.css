@@ -1,0 +1,13 @@
+.todo-container {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

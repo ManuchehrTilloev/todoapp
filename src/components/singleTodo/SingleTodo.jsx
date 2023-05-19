@@ -1,8 +1,13 @@
 import "./singleTodo.style.css";
 import React from "react";
 
-function SingleTodo() {
-  return <h1>Single Todo</h1>;
+function SingleTodo(props) {
+  return (
+    <div className="singletodo-box">
+      <h1>{props.todoList}</h1>
+      <button>DELETE</button>
+    </div>
+  );
 }
 
 export default SingleTodo;

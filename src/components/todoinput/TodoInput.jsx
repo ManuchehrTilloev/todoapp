@@ -1,10 +1,20 @@
 import "./todoInput.style.css";
-import React from "react";
+import React, { useState } from "react";
 
-function TodoInput() {
+function TodoInput(props) {
+  const [currentTodo, setCurrentTodo] = useState("");
+  const onChangeHandler = (e) => {
+    setCurrentTodo(e.target.value);
+  };
+  const onClickHandler = () => {
+    props.addTodoHandler(currentTodo);
+    setCurrentTodo("");
+  };
+
   return (
     <div>
-      <h1>Todo input</h1>
+      <input type="text" onChange={onChangeHandler} value={currentTodo} />
+      <button onClick={onClickHandler}>ADD</button>
     </div>
   );
 }

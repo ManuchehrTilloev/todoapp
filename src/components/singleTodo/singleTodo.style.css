@@ -1,0 +1,7 @@
+.singletodo-box {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  justify-items: center;
+}
