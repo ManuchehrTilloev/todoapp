@@ -1,11 +1,10 @@
 import "./todoApp.style.css";
-import SingleTodo from "../../singleTodo/SingleTodo";
-import TodoInput from "../../todoinput/TodoInput";
-import React, { useState } from "react";
+import { useState } from "react";
+import { SingleTodo, TodoInput } from "./components";
 
 const defaultTodoList = [];
 
-function TodoApp() {
+export function TodoApp() {
   const [todoList, setTodoList] = useState(defaultTodoList);
 
   const addTodoHandler = (newTodo) => {
@@ -27,5 +26,3 @@ function TodoApp() {
     </div>
   );
 }
-
-export default TodoApp;

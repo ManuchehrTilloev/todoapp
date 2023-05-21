@@ -1,7 +1,6 @@
 import "./singleTodo.style.css";
-import React from "react";
 
-function SingleTodo(props) {
+export function SingleTodo(props) {
   return (
     <div className="singletodo-box">
       <h1>{props.todoList}</h1>
@@ -9,5 +8,3 @@ function SingleTodo(props) {
     </div>
   );
 }
-
-export default SingleTodo;

@@ -1,7 +1,7 @@
 import "./todoInput.style.css";
-import React, { useState } from "react";
+import { useState } from "react";
 
-function TodoInput(props) {
+export function TodoInput(props) {
   const [currentTodo, setCurrentTodo] = useState("");
   const onChangeHandler = (e) => {
     setCurrentTodo(e.target.value);
@@ -18,5 +18,3 @@ function TodoInput(props) {
     </div>
   );
 }
-
-export default TodoInput;
