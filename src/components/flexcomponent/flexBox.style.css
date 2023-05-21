@@ -1,0 +1,43 @@
+.box {
+  background-color: rgb(30, 0, 255);
+  height: 400px;
+  width: 400px;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.minis {
+  background-color: rgb(235, 7, 95);
+  height: 190px;
+  width: 190px;
+  margin-bottom: 10px;
+}
+
+.minisCont {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.white {
+  background-color: azure;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
